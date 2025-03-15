@@ -4,7 +4,6 @@ textarea, button, div, p {
   margin-right: auto;
   padding: 12px 20px;
   box-sizing: border-box;
-  border-radius: 4px;
   display: block;
   font-size: 16px;
 }
