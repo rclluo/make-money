@@ -41,10 +41,10 @@ body:after {
 
 @keyframes change-color {
   0% {background-color: #000;}
-  16% {background-color: #202;}
-  33% {background-color: #303;}
+  16% {background-color: #303;}
+  33% {background-color: #202;}
   50% {background-color: #404;}
-  67% {background-color: #606;}
-  84% {background-color: #101;}
+  67% {background-color: #101;}
+  84% {background-color: #606;}
   100% {background-color: #000;}
 }
