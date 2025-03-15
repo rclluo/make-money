@@ -4,19 +4,19 @@ body {
 
 textarea, button, div, p {
   font-family: 'Courier New', monospace;
-  border: 2px solid #444;
+  border: 2px solid #040;
   border-radius: 0px;
-  background-color: #111;
+  background-color: #010;
   color: #0f0;
   text-shadow: 1px 1px 10px #0f0, 1px 1px 10px #0c0;
 }
 
 button:active {
-  border: 2px solid #070707;
-  background-color: #444;
+  border: 2px solid #0b0;
+  background-color: #080;
 }
 
 button:disabled {
-  border: 2px solid #070707;
-  background-color: #444;
+  border: 2px solid #080;
+  background-color: #000;
 }
