@@ -1,9 +1,14 @@
+@font-face {
+  font-family: 'Ground Zero';
+  src: url(GroundZero.ttf);
+}
+
 body {
   animation: change-color linear 12s infinite;
 }
 
 textarea, button, div, p {
-  font-family: 'Courier New', monospace;
+  font-family: 'Ground Zero';
   border: 2px solid #404;
   border-radius: 0px;
   background-color: #101;
