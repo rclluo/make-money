@@ -9,9 +9,9 @@ body {
 
 textarea, button, div, p {
   font-family: 'Ground Zero';
-  border: 2px solid #404;
+  border: 2px solid #f0f;
   border-radius: 0px;
-  background-color: #101;
+  background-color: #202;
   color: #f0f;
   text-shadow: 1px 1px 10px #f0f, 1px 1px 10px #c0c;
 }
@@ -22,7 +22,7 @@ button:active {
 }
 
 button:disabled {
-  border: 2px solid #808;
+  border: 2px solid #404;
   background-color: #000;
 }
 
