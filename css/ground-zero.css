@@ -1,5 +1,6 @@
 body {
   background-color: #000;
+  animation: change-color linear 10s infinite;
 }
 
 textarea, button, div, p {
@@ -36,4 +37,15 @@ body:after {
 @keyframes slide {
   0% {transform:translateX(-100%);}
   100% {transform:translateX(100%);}
+}
+
+@keyframes change-color {
+  0% {background-color: #000;}
+  14% {background-color: #b0b;}
+  28% {background-color: #404;}
+  42% {background-color: #c0c;}
+  57% {background-color: #808;}
+  71% {background-color: #f0f;}
+  87% {background-color: #101;}
+  100% {background-color: #101;}
 }
