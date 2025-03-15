@@ -5,7 +5,7 @@ body {
 textarea, button, div, p {
   font-family: 'Courier New', monospace;
   border: 2px solid #444;
-  border-radius: 4px;
+  border-radius: 0px;
   background-color: #111;
   color: #0f0;
   text-shadow: 1px 1px 10px #0f0, 1px 1px 10px #0c0;
