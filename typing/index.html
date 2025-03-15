@@ -1,0 +1,48 @@
+<head>
+  <link rel="icon" type="image/x-icon" href="icon.png">
+  <link id="pagestyle" rel="stylesheet" href="css/light.css">
+  <link rel="stylesheet" href="css/basic.css">
+</head>
+<body>
+  <div>
+    $
+    <span id="money">0</span>
+  </div>
+  <textarea id="typing-area" placeholder="Type the text here..."></textarea>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#typing-area').on("paste", function (e) {
+        e.preventDefault();
+        alert("Heyyyyy... No cheating!");
+      });
+    });
+  </script>
+  <button id="submit-button" disabled onclick="
+    end();
+  ">Submit Text!</button>
+  <div id="results-display" style="height: 0;">
+    <br>
+    Characters typed: <span id="results-chars">0</span>
+    <br>
+    WPM: <span id="results-wpm">0</span>
+    <br>
+    Speed bonus: <span id="results-bonus">0</span>%
+    <br>
+    Accuracy: <span id="results-acc">0</span>%
+    <br>
+    Money earned: $<span id="results-money">0</span>
+  </div>
+  <textarea id="sample-area" placeholder="Text will show up here..." readonly style="user-select: none; pointer-events: none;"></textarea>
+  <script>
+    document.getElementById('sample-area').style.pointerEvents='none';
+  </script>
+  <button id="get-button" onclick="
+    start();
+  ">Get Text!</button>
+  <p id="timer">Time will show here...</p>
+  <script src="texts.js"></script>
+  <script src="definitions.js"></script>
+  <script src="money.js"></script>
+  <script src="buttons.js"></script>
+</body>
