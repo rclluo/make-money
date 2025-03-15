@@ -8,7 +8,7 @@ const easyTexts=[
     'Because the song "99 Bottle Of Beer" ends with "You go to the store and buy some more, 99 bottles of beer on the wall," you can sing it forever.',
     'Did you know that "Forever Young" has been a Top 100 hit, peaking at No. 65 on the Billboard Hot 100 in 1988-89 after a re-release.',
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    'Cody Lane (born January 3, 1996) is an American professional stock car racing driver. He competed in the NASCAR Xfinity Series, driving a Chevrolet Camaro for Cody Lane Racing.',
+    'Cody Lane, born January 3, 1996, is an American professional stock car racing driver. He competed in the NASCAR Xfinity Series, driving a Chevrolet Camaro for Cody Lane Racing.',
     'Lieutenant Colonel Nicolas Gutierrez was twice acting governor of the Alta California in 1836, from January to May and July to November.',
     'Nearly 97 percent of water is salty or otherwise undrinkable. Another two percent is locked up in glaciers and ice caps. That leaves only one percent for us.'
 ]
