@@ -1,6 +1,6 @@
 body {
   background-color: #000;
-  animation: change-color linear 10s infinite;
+  animation: change-color linear 12s infinite;
 }
 
 textarea, button, div, p {
