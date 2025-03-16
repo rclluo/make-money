@@ -4,7 +4,7 @@
 }
 
 body {
-  animation: change-color linear 0.8s infinite;
+  animation: change-color linear 0.5s infinite;
 }
 
 textarea, button, div, p {
@@ -40,6 +40,6 @@ body:after {
 
 @keyframes change-color {
   0% {background-color: #000;}
-  50% {background-color: #008;}
+  50% {background-color: #004;}
   100% {background-color: #000;}
 }
