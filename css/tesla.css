@@ -40,6 +40,6 @@ body:after {
 
 @keyframes change-color {
   0% {background-color: #000;}
-  50% {background-color: #004;}
+  50% {background-color: #002;}
   100% {background-color: #000;}
 }
