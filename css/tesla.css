@@ -10,7 +10,6 @@ body {
 textarea, button, div, p {
   border-image: url(electric-line.png);
   font-family: "Tesla";
-  border: 2px solid #0ff;
   border-radius: 0px;
   background-color: #022;
   color: #0ff;
@@ -36,5 +35,10 @@ body:after {
   position: absolute;
   z-index:-1;
   animation: slide 1s infinite;
-  background: linear-gradient(to right, rgba(255,0,255,0) 0%,rgba(255,0,255,0.1) 50%,rgba(232,0,232,0) 99%,rgba(125,0,125,0) 100%);
+  background: linear-gradient(to left, rgba(255,0,255,0) 0%,rgba(0,255,255,0.1) 50%,rgba(0,232,232,0) 99%,rgba(0,125,125,0) 100%);
+}
+
+@keyframes slide {
+  0% {transform:translateX(100%);}
+  100% {transform:translateX(-100%);}
 }
