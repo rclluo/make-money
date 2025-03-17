@@ -8,7 +8,8 @@ body {
 }
 
 textarea, button, div, p {
-  border-image: url(electric-line.png) 5% repeat;
+  background-image: url(electric-line.png);
+  background-size: 100% 100%; 
   font-family: "Tesla";
   border-radius: 0px;
   background-color: #022;
