@@ -39,7 +39,7 @@ function end() {
     speedBonus=1.5;
   }
   resultBonus.innerHTML=speedBonus*100;
-  let moneyEarned=return Math.ceil(longer*accuracy*(1+speedBonus)*100)/100;
+  let moneyEarned=Math.ceil(longer*accuracy*(1+speedBonus)*100)/100;
   resultMoney.innerHTML=moneyEarned;
   changeMoney(moneyEarned);
   resultDisplay.setAttribute('style','height: 150;');
