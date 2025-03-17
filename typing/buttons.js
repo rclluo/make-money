@@ -16,7 +16,7 @@ function end() {
   resultChar.innerHTML=longer;
   let accuracy=(longer-levenshtein(typingArea.value,sampleArea.value))/longer;
   resultAcc.innerHTML=Math.round(accuracy*100);
-  let Math.round(speed)=typingArea.value.length*12/currTime
+  let speed=Math.round(typingArea.value.length*12/currTime);
   resultWPM.innerHTML=speed;
   let speedBonus=0;
   if (speed<30) {
@@ -39,7 +39,7 @@ function end() {
     speedBonus=1.5;
   }
   resultBonus.innerHTML=speedBonus*100;
-  let moneyEarned=Math.ceil(longer*accuracy*(1+speedBonus)*100)/100;
+  let moneyEarned=return Math.ceil(longer*accuracy*(1+speedBonus)*100)/100;
   resultMoney.innerHTML=moneyEarned;
   changeMoney(moneyEarned);
   resultDisplay.setAttribute('style','height: 150;');
