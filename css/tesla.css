@@ -17,13 +17,12 @@ textarea, button, div, p {
 }
 
 button:active {
-  border: 2px solid #0bb;
   background-color: #008;
 }
 
 button:disabled {
-  border: 2px solid #044;
   background-color: #000;
+  color: #044;
 }
 
 body:after {
