@@ -8,6 +8,7 @@ body {
 }
 
 textarea, button, div, p {
+  border: border: 2px solid #0ff;
   background-image: url(electric-line.png);
   background-size: 100% 100%; 
   font-family: "Tesla";
@@ -18,10 +19,12 @@ textarea, button, div, p {
 }
 
 button:active {
+  border: border: 2px solid #fff;
   background-color: #008;
 }
 
 button:disabled {
+  border: border: 2px solid #088;
   background-color: #000;
   color: #044;
 }
