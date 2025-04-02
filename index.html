@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body, html {
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+      }
+      .container {
+        width: 100%;
+        height: 90%;
+      }
+      .section {
+        box-sizing: border-box;
+        border: 1px solid gainsboro;
+        background-color: whitesmoke;
+        padding: 10px;
+      }
+      .small {
+        width: 50%;
+        margin: auto;
+      }
+      .earnbutton {
+        margin: auto;
+        width: 235px;
+        height: 100px;
+        display: block;
+      }
+      p {
+        text-align: center;
+        width: 100%;
+      }
+      .italic {
+        font-style: italic;
+      }
+      .leftpane {
+        width: 25%;
+        height: 90%;
+        float: left;
+      }
+      .middlepane {
+        width: 50%;
+        height: 90%;
+        float: left;
+      }
+      .rightpane {
+        width: 25%;
+        height: 90%;
+        position: relative;
+        float: right;
+      }
+      .toppane {
+        width: 100%;
+        height: 10%;
+        margin: auto;
+      }
+      textarea {
+        background: transparent;
+        color: black;
+        resize: none;
+        border: 0 none;
+        width: 100%;
+        font-size: 3em;
+        text-align: center;
+        outline: none;
+        position: absolute;
+      }
+    </style>
+    <title>Make Money</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="section toppane">
+        <textarea>John Doe's Money Factory</textarea>
+      </div>
+      <div class="section leftpane">
+        Hi
+      </div>
+      <div class="section middlepane">
+        <img class="earnbutton" id="earnbutton" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/US_one_dollar_bill%2C_obverse%2C_series_2009.jpg/600px-US_one_dollar_bill%2C_obverse%2C_series_2009.jpg">
+        <div class="section small">
+          <p>You currently have</p>
+          <p>0</p>
+          <p>dollars</p>
+        </div>
+      </div>
+      <div class="section rightpane">
+        Hi
+      </div>
+    </div>
+  </body>
+  <script>
+    var data=localStorage.getItem("save");
+    if (data==null) {
+      data=JSON.parse("{}");
+    }
+    if (data["money"]==undefined) {
+      data["money"]=0;
+    }
+    if (data["income_level"]==undefined) {
+      data["income_level"]=1;
+    }
+    if (data["workers"]==undefined) {
+      data["workers"]=0;
+    }
+    if (data["level"==undefined]) {
+      data["level"]=1;
+    }
+    if (data["worker_level"==undefined]) {
+      data["worker_level"]=1;
+    }
+    let income_pictures={
+      1:"https://upload.wikimedia.org/wikipedia/commons/2/23/US_one_dollar_bill%2C_obverse%2C_series_2009.jpg",
+      2:"https://upload.wikimedia.org/wikipedia/commons/2/27/US_%242_bill_obverse_series_2003_A.jpg",
+      5:"https://upload.wikimedia.org/wikipedia/commons/f/f9/US_%245_Series_2006_obverse.jpg",
+      10:"https://upload.wikimedia.org/wikipedia/commons/4/49/US10dollarbill-Series_2004A.jpg",
+      20:"https://upload.wikimedia.org/wikipedia/commons/b/bf/US20-front.jpg",
+      50:"https://upload.wikimedia.org/wikipedia/commons/0/09/50_USD_Series_2004_Note_Front.jpg",
+      100:"https://upload.wikimedia.org/wikipedia/commons/7/7b/Obverse_of_the_series_2009_%24100_Federal_Reserve_Note.jpg",
+      500:"https://upload.wikimedia.org/wikipedia/commons/b/be/500_USD_note%3B_series_of_1934%3B_obverse.jpg",
+      1000:"https://upload.wikimedia.org/wikipedia/commons/8/8a/1000_USD_note%3B_series_of_1934%3B_obverse.jpg",
+      5000:"https://upload.wikimedia.org/wikipedia/commons/a/ab/US_%245000_1934_Federal_Reserve_Note.jpg",
+      10000:"https://upload.wikimedia.org/wikipedia/commons/6/61/10000_USD_note%3B_series_of_1934%3B_obverse.jpg",
+      100000:"https://upload.wikimedia.org/wikipedia/commons/5/53/US100000dollarsbillobverse.jpg"
+    }
+    let income_levels=[0,1,2,5,10,20,50,100,500,1000,5000,10000]
+    setInterval(() => {
+      localStorage.setItem("save",JSON.stringify(data));
+    }, 5000);
+    document.getElementById("earnbutton").addEventListener("click", (event) => {
+      data.money
+    });
+  </script>
+</html>
