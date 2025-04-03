@@ -95,24 +95,15 @@
     </div>
   </body>
   <script>
-    var data=localStorage.getItem("save");
+    let data=localStorage.getItem("save");
     if (data==null) {
-      let data={};
-    }
-    if (data["money"]==undefined) {
-      data["money"]=0;
-    }
-    if (data["income_level"]==undefined) {
-      data["income_level"]=1;
-    }
-    if (data["workers"]==undefined) {
-      data["workers"]=0;
-    }
-    if (data["level"==undefined]) {
-      data["level"]=1;
-    }
-    if (data["worker_level"==undefined]) {
-      data["worker_level"]=1;
+      data={
+        "money":0,
+        "income_level":1,
+        "workers":0,
+        "level":0,
+        "worker_level":1
+      };
     }
     let income_pictures={
       0:"https://upload.wikimedia.org/wikipedia/commons/4/48/BLANK_ICON.png",
