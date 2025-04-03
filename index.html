@@ -95,22 +95,6 @@
     </div>
   </body>
   <script>
-    let income_pictures={
-      1:"images/1.jpeg",
-      2:"images/2.jpeg",
-      5:"images/5.jpeg",
-      10:"images/10.jpeg",
-      20:"images/20.jpeg",
-      50:"images/50.jpeg",
-      100:"images/100.jpeg",
-      500:"images/500.jpeg",
-      1e3:"images/1000.jpeg",
-      5e3:"images/5000.jpeg",
-      1e4:"images/10000.jpeg",
-      1e5:"images/100000.jpeg",
-      1e6:"images/1000000.png"
-    };
-    let income_levels=[0,1,2,5,10,20,50,100,500,1e3,5e3,1e4,1e5,1e6];
     var data=localStorage.getItem("save");
     if (data==null) {
       data=JSON.parse("{}");
@@ -130,6 +114,24 @@
     if (data["worker_level"==undefined]) {
       data["worker_level"]=1;
     }
+    let income_pictures={
+      0:"https://upload.wikimedia.org/wikipedia/commons/4/48/BLANK_ICON.png",
+      1:"images/1.jpeg",
+      2:"images/2.jpeg",
+      5:"images/5.jpeg",
+      10:"images/10.jpeg",
+      20:"images/20.jpeg",
+      50:"images/50.jpeg",
+      100:"images/100.jpeg",
+      500:"images/500.jpeg",
+      1e3:"images/1000.jpeg",
+      5e3:"images/5000.jpeg",
+      1e4:"images/10000.jpeg",
+      1e5:"images/100000.jpeg",
+      1e6:"images/1000000.png"
+    };
+    let income_levels=[0,1,2,5,10,20,50,100,500,1e3,5e3,1e4,1e5,1e6];
+    document.getElementById("earnbutton").setAttribute("src",income_pictures[income_levels[data["income_level"]]]);
     setInterval(() => {
       localStorage.setItem("save",JSON.stringify(data));
     }, 5000);
