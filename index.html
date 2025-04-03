@@ -97,7 +97,7 @@
   <script>
     var data=localStorage.getItem("save");
     if (data==null) {
-      data=JSON.parse("{}");
+      let data={};
     }
     if (data["money"]==undefined) {
       data["money"]=0;
